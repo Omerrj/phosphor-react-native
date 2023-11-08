@@ -62,11 +62,7 @@ const generateIconWithWeight = (icon, weight) => {
       .replace(/import type .*;\n/g, '')
       .replace('const', "import { IconProps } from '../lib'\n\nconst")
       .replace('props: SvgProps', 'props: IconProps')
-      .replace(' xmlns="http://www.w3.org/2000/svg"', '')
-      .replace(
-        '<Svg ',
-        '<Svg className="' + iconName + '__svg-icon-phosphor" '
-      );
+      .replace(' xmlns="http://www.w3.org/2000/svg"', '');
 
     if (weight === 'fill' || weight === 'duotone') {
       tsCode = tsCode.replace('fill="currentColor"', 'fill={props.color}');
