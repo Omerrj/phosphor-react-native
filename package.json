@@ -49,8 +49,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@phosphor-icons/core": "^2.0.2",
-    "caniuse-lite": "^1.0.30001518"
+    "@phosphor-icons/core": "^2.1.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.7",
